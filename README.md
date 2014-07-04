@@ -119,9 +119,12 @@ Include js plugin:
 
 ```javascript
 
-$(".selector").Animated-Megadrop({
-
-});
+$("#menu').Animated-Megadrop({
+        activeClass: 'open',
+        fadeInDuration: 250,
+        fadeOutDuration: 'slow',     
+        hoverTimeout: 450        
+    });
 
 ```
 

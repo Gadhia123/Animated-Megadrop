@@ -1,5 +1,5 @@
 jQuery(function( $ ) {
-    $.fn.Navigation = function(options) {
+    $.fn.Animated-Megadrop = function(options) {
         
         var settings = $.extend({
         activeClass: 'open',

@@ -11,12 +11,11 @@
 </ul>
 
 <h2>Dependencies</h2>
-
-<a href="http://daneden.github.io/animate.css/">Animate.css</a>
-https://github.com/daneden/animate.css
-
-Used for CSS3 Animation Classes
-HoverIntent
+<ul>
+<li> <a href="http://daneden.github.io/animate.css/">Animate.css </a>
+<li> HoverIntent </li>
+<li> </li> 
+</ul>
 
 <h2>Installation</h2>
 
@@ -44,8 +43,11 @@ Include js plugin:
 <h2>Call the plugin</h2>
 
 ```javascript
+
 $(".selector").Animated-Megadrop({
-        });
+
+});
+
 ```
 
 

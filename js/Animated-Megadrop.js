@@ -1,3 +1,8 @@
+/*
+Todo: Remove dependancy of hoverIntent
+*/
+
+
 jQuery(function( $ ) {
     $.fn.Animated-Megadrop = function(options) {
         

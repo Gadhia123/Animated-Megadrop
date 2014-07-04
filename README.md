@@ -12,9 +12,9 @@
 
 <h2>Dependencies</h2>
 <ul>
-<li> <a href="http://daneden.github.io/animate.css/">Animate.css </a>
-<li> HoverIntent </li>
-<li> Compass (if your using the SASS)</li> 
+<li> <a href="http://daneden.github.io/animate.css/">Animate.css </a></li>
+<li> <a href="https://github.com/briancherne/jquery-hoverIntent">HoverIntent<a></li>
+<li> Compass</li> 
 </ul>
 
 <h2>Installation</h2>

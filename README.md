@@ -14,7 +14,7 @@
 <ul>
 <li> <a href="http://daneden.github.io/animate.css/">Animate.css </a>
 <li> HoverIntent </li>
-<li> </li> 
+<li> Compass (if your using the SASS)</li> 
 </ul>
 
 <h2>Installation</h2>

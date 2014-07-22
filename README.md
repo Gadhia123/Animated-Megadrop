@@ -1,6 +1,6 @@
 <h1>Animated-Megadrop</h1>
 
-<p>Animated Dropdown Mega Menu</p>
+<p>An Animated Dropdown Mega Menu that uses Animate CSS/HoverIntent with CSS only fallback</p>
 
 <h2>Features</h2>
 
@@ -37,6 +37,17 @@ Include js plugin:
 </pre>
 
 <h2>Set up your HTML</h2>
+
+Add the following classes to the menu UL:
+
+```
+
+.nav      // styles assigned to this class
+.nojs     // contains the hover classes that will be removed if javascript is present                  
+
+```
+
+
 
 ```
 
@@ -120,6 +131,7 @@ Include js plugin:
 
 
 <h2>Call the plugin</h2>
+
 
 ```javascript
 

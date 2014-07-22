@@ -1,4 +1,4 @@
-<h1>Animated-Megadrop</h1>
+<h1>Animated Megadropdown</h1>
 
 <p>An Animated Dropdown Mega Menu that uses Animate CSS/HoverIntent with CSS only fallback</p>
 
@@ -29,10 +29,10 @@ Inlude Animate.css or copy the relavent styles
 "animate.css"
 
 Load the CSS:
-"Animated-Megadrop.css"
+"Megadropdown.css"
 
 Include js plugin:
-"Animated-Megadrop.js"
+"Megadropdown.js"
 
 </pre>
 
@@ -52,79 +52,79 @@ Add the following classes to the menu UL:
 ```
 
 <nav class="navigation">
-                            <ul class="nav shadow clearfix nojs" id="menu">
-                                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                                <li><a href="#">Megadrop</a>
-                                        <div class="container-4">
-                                                <div class="col1">
-                                                        <h3>Megadrop</h3>
-                                                            <ul>
-                                                                <li><a href="">Item 1</a></li>
-                                                                <li><a href="">Item 2</a></li>
-                                                                <li><a href="">Item 3</a></li>
-                                                                <li><a href="">Item 4</a></li>
-                                                                <li><a href="">Item 5</a></li>
-                                                                <li><a href="">Item 6</a></li>
-                                                                <li><a href="">Item 7</a></li>
-                                                                <li><a href="">Item 8</a></li>
+<ul class="nav shadow clearfix nojs" id="menu">
+    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="#">Megadrop</a>
+            <div class="container-4">
+                    <div class="col1">
+                            <h3>Megadrop</h3>
+                                <ul>
+                                    <li><a href="">Item 1</a></li>
+                                    <li><a href="">Item 2</a></li>
+                                    <li><a href="">Item 3</a></li>
+                                    <li><a href="">Item 4</a></li>
+                                    <li><a href="">Item 5</a></li>
+                                    <li><a href="">Item 6</a></li>
+                                    <li><a href="">Item 7</a></li>
+                                    <li><a href="">Item 8</a></li>
 
 
-                                                            </ul>
-                                                </div>
-                                                <div class="col1">
-                                                    <h3>&nbsp;</h3>
-                                                            <ul>
-                                                                <li><a href="">Item 9</a></li>
-                                                                <li><a href="">Item 10</a></li>
-                                                                <li><a href="">Item 11</a></li>
-                                                                <li><a href="">Item 12</a></li>
-                                                                <li><a href="">Item 13</a></li>
-                                                                <li><a href="">Item 14</a></li>
-                                                                <li><a href="">Item 15</a></li>
-                                                            </ul>
-                                                </div>
-                                                <div class="col1">
-                                                    <h3>&nbsp;</h3>
-                                                            <ul>
-                                                                <li><a href="">Item 16</a></li>
-                                                                <li><a href="">Item 17</a></li>
-                                                                <li><a href="">Item 18</a></li>
-                                                                <li><a href="">Item 19</a></li>
-                                                                <li><a href="">Item 20</a></li>
+                                </ul>
+                    </div>
+                    <div class="col1">
+                        <h3>&nbsp;</h3>
+                                <ul>
+                                    <li><a href="">Item 9</a></li>
+                                    <li><a href="">Item 10</a></li>
+                                    <li><a href="">Item 11</a></li>
+                                    <li><a href="">Item 12</a></li>
+                                    <li><a href="">Item 13</a></li>
+                                    <li><a href="">Item 14</a></li>
+                                    <li><a href="">Item 15</a></li>
+                                </ul>
+                    </div>
+                    <div class="col1">
+                        <h3>&nbsp;</h3>
+                                <ul>
+                                    <li><a href="">Item 16</a></li>
+                                    <li><a href="">Item 17</a></li>
+                                    <li><a href="">Item 18</a></li>
+                                    <li><a href="">Item 19</a></li>
+                                    <li><a href="">Item 20</a></li>
 
-                                                            </ul>
-                                                </div>
-                                                <div class="col1">
-                                                    <h3>&nbsp;</h3>
-                                                            <ul>
-                                                                 <li><a href="">Item 21</a></li>
-                                                                  <li><a href="">Item 22</a></li>
-                                                                   <li><a href="">Item 23</a></li>
-                                                                    <li><a href="">Item 24</a></li>
-                                                                     <li><a href="">Item 25</a></li>
+                                </ul>
+                    </div>
+                    <div class="col1">
+                        <h3>&nbsp;</h3>
+                                <ul>
+                                     <li><a href="">Item 21</a></li>
+                                      <li><a href="">Item 22</a></li>
+                                       <li><a href="">Item 23</a></li>
+                                        <li><a href="">Item 24</a></li>
+                                         <li><a href="">Item 25</a></li>
 
-                                                            </ul>
-                                                </div>
-                                                <div class="col4">
-                                                    <a href='#'><h3>Subhead Link.</h3></a>
-                                                </div>
-                                        </div>	
-                                </li>
-                                <li><a href="#">About</a>
-                                            <div class="container-1">
-                                                    <ul>
-                                                        <li><a href="#">Who We Are</a></li>
-                                                        <li><a href="#">Why We Care</a></li>
-                                                        <li><a href="#">Some other page</a></li>
-                                                        <li><a href="#">How We Work</a></li>
-                                                    </ul>
-                                            </div>
-                                </li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li class="nav-right"><a href="#">Request a Callback</a></li>   
-                        </ul>     
-                </nav>
+                                </ul>
+                    </div>
+                    <div class="col4">
+                        <a href='#'><h3>Subhead Link.</h3></a>
+                    </div>
+            </div>	
+    </li>
+    <li><a href="#">About</a>
+                <div class="container-1">
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Why We Care</a></li>
+                            <li><a href="#">Some other page</a></li>
+                            <li><a href="#">How We Work</a></li>
+                        </ul>
+                </div>
+    </li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Contact</a></li>
+    <li class="nav-right"><a href="#">Request a Callback</a></li>   
+</ul>     
+</nav>
 
 
 ```
@@ -135,8 +135,8 @@ Add the following classes to the menu UL:
 
 ```javascript
 
-$('#menu').Animated-Megadrop({
-        activeClass: 'open',
+$('#menu').Megadropdown({
+        activeClass: 'open',                                                                                   
         fadeInDuration: 250,
         fadeOutDuration: 'slow',
         openAnimation: 'fadeInUp',

@@ -1,7 +1,7 @@
 <h1>Animated Megadropdown</h1>
 
 <p>An Animated Dropdown Mega Menu that uses Animate CSS/HoverIntent with CSS only fallback</p>
-<p>Note: Wouldn't use this an is, needs tweaking</p>
+<p>Note: Wouldn't use this as is, needs tweaking</p>
 
 
 <h2><a href="http://djsmithme.github.io/Animated-Megadrop/">Demo</a></h2>

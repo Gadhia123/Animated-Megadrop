@@ -11,6 +11,10 @@
 </ul>
 
 <h2>Dependencies</h2>
+
+
+Will work without however if you have them added this plugin can use the following:
+
 <ul>
 <li> <a href="http://daneden.github.io/animate.css/">Animate.css </a></li>
 <li> <a href="https://github.com/briancherne/jquery-hoverIntent">HoverIntent<a></li>

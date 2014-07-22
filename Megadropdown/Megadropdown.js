@@ -4,7 +4,10 @@ Todo: Remove dependancy of hoverIntent
 
 
 jQuery(function( $ ) {
-    $.fn.Animated-Megadrop = function(options) {
+    
+    
+    
+    $.fn.Megadropdown = function(options) {
         
         var settings = $.extend({
         activeClass: 'open',
@@ -20,7 +23,8 @@ jQuery(function( $ ) {
         
         function openmenu()
         {
-         $menu = $(this);
+            
+        $menu = $(this);
           $menu.addClass(settings.activeClass)
                .find('div[class^="container-"]')
                .stop(true, true)
@@ -39,27 +43,26 @@ jQuery(function( $ ) {
                 .find('div[class^="container-"]')
                 .stop(true, true).fadeOut(settings.fadeOutDuration)
                 .removeClass(settings.openAnimation)
-                .addClass(settings.closeAnimation).removeClass('navvisfix');;
+                .addClass(settings.closeAnimation).removeClass('navvisfix');
       }
         
         $nav = this;
         
-           
         //Fallback, remove css hover classes.
         $nav.removeClass('nojs').addClass('dsmenu');
         //Animate the menu using jQuery
         
- 
-      
-   
-        $('.dsmenu li').hoverIntent({
-            over : openmenu,
-	    out : closemenu,
-            timeout : settings.hoverTimeout
-        });  
-        
-        
-        
+        if (!$.fn.hoverIntent) {
+                // Hover Intent not found so use the standard jquery hover
+                // Todo: Add CSS delay to simulate hoverIntent in newer browsers - settings.delay
+                $('.dsmenu li').hover({over : openmenu, out : closemenu});  
+        }else{
+            //Found HoverIntent so use it
+            $('.dsmenu li').hoverIntent({over : openmenu, out : closemenu, timeout : settings.hoverTimeout});  
+        }
         return this;
     };
+    
+  
+    
 }(jQuery));

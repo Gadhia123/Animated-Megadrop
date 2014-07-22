@@ -7,33 +7,35 @@ and open the template in the editor.
     Created on : 04-Mar-2014, 16:18:40
     Author     : dansmith
 */
-/* line 24, ../sass/Animated-Megadrop.scss */
+/* line 27, ../sass/Megadropdown.scss */
 .nav {
-  background: #333333;
+  box-sizing: border-box;
   width: 100%;
-  margin: 20px auto;
+  padding: 0;
+  margin: 0 auto;
+  background: #333333;
   height: 63px;
 }
-/* line 31, ../sass/Animated-Megadrop.scss */
+/* line 38, ../sass/Megadropdown.scss */
 .nav.shadow {
   -webkit-box-shadow: inset 0 0 12px 0 black;
   box-shadow: inset 0 0 12px 0 black;
 }
-/* line 37, ../sass/Animated-Megadrop.scss */
+/* line 44, ../sass/Megadropdown.scss */
 .nav li {
   list-style: none;
 }
-/* line 40, ../sass/Animated-Megadrop.scss */
+/* line 46, ../sass/Megadropdown.scss */
 .nav li.nav-right {
   float: right;
 }
-/* line 47, ../sass/Animated-Megadrop.scss */
+/* line 50, ../sass/Megadropdown.scss */
 .nav > li {
   padding: 0;
   float: left;
   position: relative;
 }
-/* line 48, ../sass/Animated-Megadrop.scss */
+/* line 52, ../sass/Megadropdown.scss */
 .nav > li > a {
   float: left;
   color: #fff;
@@ -45,33 +47,52 @@ and open the template in the editor.
   height: 63px;
   text-shadow: -1px 1px 0 black;
 }
-/* line 60, ../sass/Animated-Megadrop.scss */
+/* line 64, ../sass/Megadropdown.scss */
 .nav > li > a:last-of-type {
   margin-right: 0;
 }
-/* line 64, ../sass/Animated-Megadrop.scss */
+/* line 68, ../sass/Megadropdown.scss */
 .nav > li > div {
   position: absolute;
   left: 0;
   top: 63px;
   display: none;
-  background: #fff;
-  border-bottom: 2px solid gray;
-  padding: 10px 10px;
+  background: white;
+  padding: 10px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   z-index: 99999;
 }
-/* line 76, ../sass/Animated-Megadrop.scss */
+/* line 79, ../sass/Megadropdown.scss */
+.nav > li > div ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 82, ../sass/Megadropdown.scss */
+.nav > li > div ul li a {
+  background: red;
+  color: #FFF;
+  text-decoration: none;
+  padding: 9px 12px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  display: block;
+}
+/* line 93, ../sass/Megadropdown.scss */
+.nav > li > div ul li a:hover {
+  background: #FFF;
+  color: #111;
+}
+/* line 102, ../sass/Megadropdown.scss */
 .nav > li > div p {
   color: #666;
 }
-/* line 77, ../sass/Animated-Megadrop.scss */
+/* line 103, ../sass/Megadropdown.scss */
 .nav > li > div .right {
   right: 0;
   left: auto;
 }
-/* line 80, ../sass/Animated-Megadrop.scss */
+/* line 108, ../sass/Megadropdown.scss */
 .nav > li:hover > a {
   background: white;
   color: black;
@@ -87,16 +108,16 @@ and open the template in the editor.
   -moz-box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 97, ../sass/Animated-Megadrop.scss */
+/* line 125, ../sass/Megadropdown.scss */
 .nav > li:first-child > a {
   border-left: 0;
 }
-/* line 100, ../sass/Animated-Megadrop.scss */
+/* line 128, ../sass/Megadropdown.scss */
 .nav > li:last-child > a {
   border-right: 0;
 }
 
-/* line 112, ../sass/Animated-Megadrop.scss */
+/* line 138, ../sass/Megadropdown.scss */
 .nav.nojs > li:hover > a {
   background: #f8f8f8;
   color: #222;
@@ -112,14 +133,14 @@ and open the template in the editor.
   -moz-box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 128, ../sass/Animated-Megadrop.scss */
+/* line 154, ../sass/Megadropdown.scss */
 .nav.nojs > li:hover div[class^="container-"] {
   display: block !important;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 137, ../sass/Animated-Megadrop.scss */
+/* line 163, ../sass/Megadropdown.scss */
 .navvisfix {
   visibility: visible !important;
   opacity: 1 !important;
@@ -127,11 +148,11 @@ and open the template in the editor.
 }
 
 /* MEGA DROP DOWN */
-/* line 146, ../sass/Animated-Megadrop.scss */
+/* line 172, ../sass/Megadropdown.scss */
 .container-1 {
   width: 160px;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-1 .col1 {
   margin: 0;
   padding: 0;
@@ -139,18 +160,18 @@ and open the template in the editor.
   width: 100%;
 }
 
-/* line 146, ../sass/Animated-Megadrop.scss */
+/* line 172, ../sass/Megadropdown.scss */
 .container-2 {
   width: 320px;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-2 .col1 {
   margin: 0;
   padding: 0;
   float: left;
   width: 50%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-2 .col2 {
   margin: 0;
   padding: 0;
@@ -158,25 +179,25 @@ and open the template in the editor.
   width: 100%;
 }
 
-/* line 146, ../sass/Animated-Megadrop.scss */
+/* line 172, ../sass/Megadropdown.scss */
 .container-3 {
   width: 480px;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-3 .col1 {
   margin: 0;
   padding: 0;
   float: left;
   width: 33.33333%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-3 .col2 {
   margin: 0;
   padding: 0;
   float: left;
   width: 66.66667%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-3 .col3 {
   margin: 0;
   padding: 0;
@@ -184,32 +205,32 @@ and open the template in the editor.
   width: 100%;
 }
 
-/* line 146, ../sass/Animated-Megadrop.scss */
+/* line 172, ../sass/Megadropdown.scss */
 .container-4 {
   width: 640px;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-4 .col1 {
   margin: 0;
   padding: 0;
   float: left;
   width: 25%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-4 .col2 {
   margin: 0;
   padding: 0;
   float: left;
   width: 50%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-4 .col3 {
   margin: 0;
   padding: 0;
   float: left;
   width: 75%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-4 .col4 {
   margin: 0;
   padding: 0;
@@ -217,39 +238,39 @@ and open the template in the editor.
   width: 100%;
 }
 
-/* line 146, ../sass/Animated-Megadrop.scss */
+/* line 172, ../sass/Megadropdown.scss */
 .container-5 {
   width: 800px;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-5 .col1 {
   margin: 0;
   padding: 0;
   float: left;
   width: 20%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-5 .col2 {
   margin: 0;
   padding: 0;
   float: left;
   width: 40%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-5 .col3 {
   margin: 0;
   padding: 0;
   float: left;
   width: 60%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-5 .col4 {
   margin: 0;
   padding: 0;
   float: left;
   width: 80%;
 }
-/* line 153, ../sass/Animated-Megadrop.scss */
+/* line 179, ../sass/Megadropdown.scss */
 .container-5 .col5 {
   margin: 0;
   padding: 0;

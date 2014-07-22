@@ -11,22 +11,29 @@ and open the template in the editor.
 
 @import "compass";
 
-
+$megadrop-height                    :   63px;
 $megadrop-background                :   #333;
 $megadrop-background-hover          :   #FFF;
-$megadrop-height                    :   63px;
-$megadrop-link-colour               :   #fff;
 $megadrop-font-size                 :   16px;
-$megamenu-dropdown-max-cols         :   5;
+
 $megadrop-dropdown-column-width     :   160px;
+$megadrop-dropdown-color: #FFF;
+
+
+$megadrop-link-colour               :   #fff;
+$megamenu-dropdown-max-cols         :   5;
 
 
 .nav {
-    
+
+  
+  box-sizing: border-box;
+      width: 100%;
+      padding:0;     
+margin: 0 auto;
 background:$megadrop-background;
-width: 100%;
-margin: 20px auto;
-height: 63px;
+height: $megadrop-height;
+
         
 	&.shadow{
 		-webkit-box-shadow:inset 0 0 12px 0 darken($megadrop-background,30%);
@@ -34,49 +41,70 @@ height: 63px;
 	}
 
 
-    li{ 
+        li{ 
     	list-style: none;       
-        	
-			&.nav-right{
-          		float: right;
-          	}
-    
-	}
+            &.nav-right{ float: right; }
+        }
 
     
-    > li { padding: 0; float: left; position: relative; 
-          > a {
-                float: left;
-             
-                color: #fff;
-                font-size: 16px;
-                text-decoration: none;
-                line-height: 63px;
-                padding: 0 14px; 
-                margin-right:1px;
-                height: 63px;
-                text-shadow: -1px 1px 0 darken($megadrop-background,30%);
-                
-                &:last-of-type{
-                    margin-right:0;
-                }
-           }
-           > div {
-                position: absolute;
-                left: 0;
-                top: 63px;
-                display: none;
-                background: #fff;
-                border-bottom:2px solid lighten($megadrop-background,30%);;
-                padding: 10px 10px;
-                box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-                overflow: hidden;
-                z-index: 99999;
-                
-                p { color: #666; }
-                .right { right: 0; left: auto }
-           }
-   &:hover{
+        > li { 
+            padding: 0; float: left; position: relative; 
+            > a {
+                  float: left;
+
+                  color: #fff;
+                  font-size: 16px;
+                  text-decoration: none;
+                  line-height: 63px;
+                  padding: 0 14px; 
+                  margin-right:1px;
+                  height: 63px;
+                  text-shadow: -1px 1px 0 darken($megadrop-background,30%);
+
+                  &:last-of-type{
+                      margin-right:0;
+                  }
+             }
+            > div {
+                 position: absolute;
+                 left: 0;
+                 top: 63px;
+                 display: none;
+                 background: $megadrop-dropdown-color;
+                 padding: 10px;
+                 box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+                 overflow: hidden;
+                 z-index: 99999;
+                 
+                 ul{ margin:0; padding:0;
+                     
+                     //dropdown link styles
+                     li a{ 
+                         
+                         background:red;
+                         
+                         color:#FFF;
+                         text-decoration: none;
+                         padding:9px 12px;
+                         margin-bottom: 2px;
+                         margin-right:2px;
+                         display:block;
+                         
+                         &:hover{
+                             background:#FFF;
+                             color:#111;
+                         }
+                         
+                     }
+                 
+                 }
+                 
+                 p { color: #666; }
+                 .right { right: 0; left: auto }
+            }
+   
+      //hover over main links      
+      &:hover{
        > a { 
            
            
@@ -106,8 +134,6 @@ height: 63px;
 .nav.nojs{
     
     > li { 
-       
-      
     &:hover{
        > a { 
            

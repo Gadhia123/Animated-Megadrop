@@ -360,9 +360,12 @@ Include js plugin:
          
          var $megamenu_options = {
         activeClass: 'open',
-        fadeInDuration: 150,
+        fadeInDuration: 180,
         fadeOutDuration: 'normal',     
-        hoverTimeout: 450        
+        hoverTimeout: 400,
+        openAnimation: 'fadeInUp',
+        closeAnimation: 'fadeOutX',
+        
        };
          
         $('#menu').Megadropdown($megamenu_options);
